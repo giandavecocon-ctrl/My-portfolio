@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap');
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.profile-media {
+.profile-media {
+  flex-shrink: 0;
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+  filter: grayscale(15%);
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.profile-media::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 180px;
+  height: 180px;
+  border: 1.5px solid #5B4B8A;
+  border-radius: 8px;
+  z-index: 1;
+}
+}
+
+.profile-content {
+  border-left: 1px solid #E0DED8;
+  padding-left: 40px;
+}
+
+.profile-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #8B8B8B;
+  margin: 0 0 4px;
+}
+
+.profile-name {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  color: #1A1A2E;
+  margin: 0 0 20px;
+}
+
+.profile-tagline {
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: #5B4B8A;
+  line-height: 1.4;
+  margin: 0 0 16px;
+  max-width: 420px;
+}
+
+.profile-intro {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #4A4A4A;
+  line-height: 1.6;
+  margin: 0 0 28px;
+  max-width: 420px;
+}
+
+.learn-more-btn {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1A1A2E;
+  text-decoration: none;
+  border-bottom: 2px solid #5B4B8A;
+  padding-bottom: 3px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.learn-more-btn:hover {
+  color: #5B4B8A;
+}
+
+@media (max-width: 600px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: left;
+    padding: 60px 20px;
+  }
+  .profile-content {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #E0DED8;
+    padding-top: 24px;
+    margin-top: 16px;
+  }
+}
