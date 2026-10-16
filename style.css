@@ -365,6 +365,74 @@ body {
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(10, 20, 40, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+  list-style: none;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 14px 24px;
+}
+
+.nav-links a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #e5e5ea;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #A99BD1;
+  border-bottom-color: #A99BD1;
+}
+
+section[id] {
+  scroll-margin-top: 70px;
+}
+
+.contact-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 24px 120px;
+}
+
+.contact-heading {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #e5e5ea;
+  margin: 0 0 20px;
+}
+
+.contact-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #f2ebeb;
+  margin: 0;
+}
+
+.contact-link {
+  color: #A99BD1;
+}
 
 @media (max-width: 700px) {
   .skills-grid {
