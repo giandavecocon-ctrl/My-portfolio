@@ -303,6 +303,68 @@ body {
 .project-link:hover {
   color: #A99BD1;
 }
+.education-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 24px 100px;
+}
+
+.education-heading {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #e5e5ea;
+  margin: 0 0 32px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.edu-table th,
+.edu-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.edu-table th {
+  background-color: #5B4B8A;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.edu-table td {
+  color: #e8e1e1;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.edu-table td:first-child {
+  white-space: nowrap;
+  color: #A99BD1;
+  font-weight: 500;
+}
+
+.edu-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
 
 @media (max-width: 700px) {
   .skills-grid {
