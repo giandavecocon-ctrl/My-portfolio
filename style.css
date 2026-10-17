@@ -554,33 +554,114 @@ section[id] {
   background-color: #726194;
 }
 
+.send-btn:hover {
+  background-color: #726194;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 900px) 
+
+/* Tablet */
+@media (max-width: 900px) {
+  .profile-section {
+    gap: 32px;
+    padding: 60px 24px;
+  }
+  .profile-name {
+    font-size: 2.2rem;
+  }
+}
+
+/* Large phones and small tablets */
 @media (max-width: 700px) {
+  body {
+    background-attachment: scroll; /* fixed backgrounds glitch on phones */
+  }
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Phones */
 @media (max-width: 600px) {
+  section[id] {
+    scroll-margin-top: 100px; /* the menu can wrap to two lines */
+  }
+
+  .nav-links {
+    gap: 6px 18px;
+    padding: 10px 16px;
+  }
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
   .profile-section {
     flex-direction: column;
+    align-items: flex-start;
     text-align: left;
-    padding: 60px 20px;
+    gap: 24px;
+    padding: 40px 20px;
   }
   .profile-content {
     border-left: none;
     padding-left: 0;
     border-top: 1px solid #E0DED8;
     padding-top: 24px;
-    margin-top: 16px;
+  }
+  .profile-name {
+    font-size: 1.9rem;
+  }
+  .profile-tagline {
+    font-size: 1.15rem;
+  }
+
+  .about-section,
+  .skills-section,
+  .projects-section,
+  .education-section,
+  .contact-section {
+    padding: 40px 20px 70px;
+  }
+  .about-heading,
+  .skills-heading,
+  .projects-heading,
+  .education-heading,
+  .contact-heading {
+    font-size: 1.6rem;
   }
   .about-columns {
     flex-direction: column;
     gap: 24px;
   }
+
+  .edu-table th,
+  .edu-table td {
+    padding: 10px 12px;
+  }
+  .edu-table td:first-child {
+    white-space: normal;
+  }
+
+  .send-btn {
+    width: 100%;
+    align-self: stretch;
+  }
 }
 
+/* Small phones */
 @media (max-width: 480px) {
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+  .project-card {
+    flex-basis: 100%;
+  }
+  .project-image {
+    height: 160px;
   }
 }
